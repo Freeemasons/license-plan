@@ -1,13 +1,22 @@
 import React from 'react';
 import './App.css';
+import { Row, Col, Grid } from "react-flexbox-grid";
+import Form from "./components/Form";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>License Plan</h1>
 
-      </header>
+
+
+  return (
+    <div>
+      <Grid>
+        <Row>
+          <Col lg={8}>
+            <Form />
+          </Col>
+        </Row>
+      </Grid>
     </div>
   );
 }
