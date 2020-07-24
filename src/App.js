@@ -10,7 +10,8 @@ function App() {
 
   return (
     <div>
-      <Grid>
+
+      <Grid fluid>
         <Row>
           <Col lg={8}>
             <Form />

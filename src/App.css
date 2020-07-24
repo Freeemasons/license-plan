@@ -1,3 +1,5 @@
+
+
 .licence__list {
   display: flex;
   flex-direction: column;
@@ -11,18 +13,23 @@
 }
 
 .text-margin {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+
 }
 
-.licence-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+.text-decoration-font {
+  font-family: BebasNeue-Regular;
+}
+
+.licence-container:hover {
+  background: #E5F2F5;
+  border: 1px solid lightsteelblue;
 }
 
 .licence-amount-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .licence-button-container {
@@ -36,11 +43,19 @@
   display: flex;
   justify-content: center;
   padding-top: 20px;
+
+  font-family: BebasNeue-Regular;
+}
+
+.licence-selected-plan-container {
+  display: flex;
+  justify-content: center;
 }
 
 .licence {
   background-color: #EAEAEA;
   border: 5px solid #BEBEBE;
+  padding: 20px;
 }
 
 .licence-amount-container__option-select {
@@ -48,7 +63,9 @@
 }
 
 .option-select-text {
-  margin-right: 20px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .Button {
@@ -71,6 +88,43 @@
 }
 
 .licence-total-text {
-  color: blue;
+  color: #549CAC;
   font-weight: 700
+}
+
+.licence-selected-plan-text {
+  padding-bottom: 30px;
+  color: #549CAC;
+}
+
+.border {
+  background: #777777;
+  height: 1px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.licence-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 0;
+  margin-left: 0;
+  margin-right: 0;
+  border: 1px solid transparent;
+}
+
+
+.licence-container__input {
+  margin-right: 10px;
+  margin-left: -10px;
+}
+
+.little-text {
+  position: absolute;
+  font-size: 12px;
+}
+
+.license-selected-value {
+  padding-right: 10px;
 }

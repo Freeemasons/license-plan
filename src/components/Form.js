@@ -43,7 +43,7 @@ class Form extends Component {
 
     const licenceValue = e.target.value
     console.log(e.target.value)
-    // const selectId = e.target.
+
     this.setState({
       licenceValue: licenceValue
     })
@@ -54,46 +54,36 @@ class Form extends Component {
 
     return (
       <div>
-        <Grid>
+        <Grid fluid>
           <Row>
-            <Col lg={8}>
+            <Col  xs={8} lg={8}>
               <form action="" className="licence">
-
-                <Row className="licence-container">
-                  <Col className="licence__list" >
-                    {licencesPlans.map((plan) => {
-                      return (
+                {licencesPlans.map((plan,i) => {
+                  return (
+                    <Row between='xs' className="licence-container margin-0">
+                      <Col  className="licence__list" >
                         <label htmlFor="" className="text-margin">
-                          <input type="radio" id={plan.id} name="genre" value={plan.value} key={plan.id}
+                          <input type="radio" id={plan.id} name="genre" value={plan.value} key={plan.id} className="licence-container__input"
                                  onChange={this.handleChange}/>
-                          LICENSE PLAN#{plan.id}
+                          <span className="text-decoration-font">LICENSE PLAN#{plan.id}</span>
                         </label>
-                      )
-                    })}
+                      </Col>
 
-
-                  </Col>
-
-                  <Col className="licence__list licence__list_addition-text">
-                    {licenseValue.map(el => {
-                      return (
-                        <div className="text-margin" key={el}>
-                          {el} per license
+                      <Col  className="licence__list licence__list_addition-text">
+                        <div className="text-margin">
+                          {licenseValue[i]} per license
                         </div>
-                      )
-                    })}
-
-                  </Col>
-
-                </Row>
+                      </Col>
+                    </Row>
+                  )
+                  })}
+                <div className="border"></div>
 
                 <Row className="licence-amount-container">
                   <Col>
                     <div className="licence-amount-container__option-select">
-
                       <span className="option-select-text">Number of licenses:</span>
-
-                      <select name="ustroistva" className="" onChange={this.handleSelectChange}>
+                      <select name="licenceValueData" className="license-selected-value" onChange={this.handleSelectChange}>
                         {optionValue.map(el => {
                           return(
                             <option value={el} key={el}>
@@ -101,15 +91,15 @@ class Form extends Component {
                             </option>
                             )
                         })}
-
                       </select>
                     </div>
                   </Col>
                 </Row>
 
+                <div className="border"></div>
                 <Row className="licence-total-amount-container">
                   <Col className="">
-                    Total amount <span className="licence-total-text">${this.state.radioButtonCheckedValue * this.state.licenceValue}</span>
+                  TOTAL: <span className="licence-total-text">${this.state.radioButtonCheckedValue * this.state.licenceValue}<span className="little-text">us</span></span>
                   </Col>
                 </Row>
                 <Row className="licence-button-container">
@@ -120,16 +110,14 @@ class Form extends Component {
                   </Col>
                 </Row>
 
-                <Row className="licence-amount-container">
-                  <Col className="">
-                    Selected plan {this.state.radioButtonCheckedId}
+                <Row className="licence-selected-plan-container ">
+                  <Col className="licence-selected-plan-text">
+                    Selected plan: #{this.state.radioButtonCheckedId}
                   </Col>
                 </Row>
-
               </form>
             </Col>
           </Row>
-          <div></div>
         </Grid>
       </div>
     )
