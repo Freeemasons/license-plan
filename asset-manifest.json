@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/license-plan/static/css/main.820e7ef2.chunk.css",
+    "main.js": "/license-plan/static/js/main.e30b3399.chunk.js",
+    "main.js.map": "/license-plan/static/js/main.e30b3399.chunk.js.map",
+    "runtime-main.js": "/license-plan/static/js/runtime-main.43b5b125.js",
+    "runtime-main.js.map": "/license-plan/static/js/runtime-main.43b5b125.js.map",
+    "static/css/2.22d6b5ec.chunk.css": "/license-plan/static/css/2.22d6b5ec.chunk.css",
+    "static/js/2.50c6c0ee.chunk.js": "/license-plan/static/js/2.50c6c0ee.chunk.js",
+    "static/js/2.50c6c0ee.chunk.js.map": "/license-plan/static/js/2.50c6c0ee.chunk.js.map",
+    "index.html": "/license-plan/index.html",
+    "precache-manifest.b3b2eda5900913da5c957456559c049a.js": "/license-plan/precache-manifest.b3b2eda5900913da5c957456559c049a.js",
+    "service-worker.js": "/license-plan/service-worker.js",
+    "static/css/2.22d6b5ec.chunk.css.map": "/license-plan/static/css/2.22d6b5ec.chunk.css.map",
+    "static/css/main.820e7ef2.chunk.css.map": "/license-plan/static/css/main.820e7ef2.chunk.css.map",
+    "static/js/2.50c6c0ee.chunk.js.LICENSE.txt": "/license-plan/static/js/2.50c6c0ee.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/license-plan/static/media/BebasNeue-Regular.4290ea77.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43b5b125.js",
+    "static/css/2.22d6b5ec.chunk.css",
+    "static/js/2.50c6c0ee.chunk.js",
+    "static/css/main.820e7ef2.chunk.css",
+    "static/js/main.e30b3399.chunk.js"
+  ]
+}
